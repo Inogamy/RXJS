@@ -25,3 +25,4 @@ const suns2 = subject$.subscribe(rmd => console.log('subs2: ', rmd));
 
 
 console.log(observer)
+console.log(observer)
