@@ -47,12 +47,9 @@ import { zip, of } from 'rxjs';
     // ==================================================================
 
     // Realizar el llamado al URL para obtener a Luke Skywalker
-    getRequest(`${SW_API}/people/1`).pipe(
+    getRequest(`Aquí va un URL`).pipe(
         // Realizar los operadores respectivos aquí
-        // Primera respuesta
-        // switchMap( resp => getRequest( resp.starships[0]))
-        switchMap( resp => zip( of(resp), getRequest( resp.starships[0]))),
-        map( ([personaje, especie]) => ({personaje, especie}))
+        
 
 
         
